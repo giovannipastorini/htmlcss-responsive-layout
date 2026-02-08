@@ -1,1 +1,31 @@
 /* Soluzione qui */
+
+/* modalità tablet */
+@media screen and (min-width: 769px) {
+    
+    /* main{
+        background-color: green;
+    } */
+    
+    #topbar{
+        justify-content: flex-start;
+    }
+
+    main{
+        padding: 40px;
+    }
+    
+    .recipe{
+        header{
+
+            .recipe-origin{
+                display: inline;
+            }
+
+            .recipe-name{
+                font-size: 2em;
+            }
+        }
+    }
+
+}
