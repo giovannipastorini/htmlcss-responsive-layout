@@ -3,10 +3,6 @@
 /* modalità tablet */
 @media screen and (min-width: 769px) {
     
-    /* main{
-        background-color: green;
-    } */
-    
     #topbar{
         justify-content: flex-start;
     }
@@ -16,8 +12,6 @@
     }
     
     .recipe{
-        header{
-
             .recipe-origin{
                 display: inline;
             }
@@ -25,6 +19,46 @@
             .recipe-name{
                 font-size: 2em;
             }
+        
+    }
+
+    /* Le informazioni della ricetta sotto il video si dispongono a griglia. */
+    .recipe .quick-notes{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+
+            li{
+                width: 30%;
+            }
+        }
+    }
+
+    /* I bottoni social si allargano */
+    .social-networks{ 
+        gap: 10px;
+
+        .btn{
+            width: calc(100% / 5 - (10px * 4) / 5);
+        }
+
+    }
+
+    /* compare il banner pubblicitario */
+    .recipe .ads{
+        display: block;
+    }
+
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+    /* CSS clear:none (?) */
+    .recipe{
+
+       /*  .presentation p{
+            display: inline-block;
+        } */
+
+        .presentation img{
+            display: inline-block;
         }
     }
 
