@@ -23,7 +23,7 @@
     }
 
     /* Le informazioni della ricetta sotto il video si dispongono a griglia. */
-    .recipe .quick-notes{
+    .recipe-info .quick-notes{
         ul{
             display: flex;
             flex-wrap: wrap;
@@ -61,3 +61,32 @@
 }
 
 /* Modalità Desktop */
+@media screen and (min-width: 993px){
+
+    /* La grandezza del titolo della ricetta aumenta ancora di più, */
+    .recipe-title .recipe-name{
+        font-size: 2.5em;
+    }
+
+    /* Le informazioni della ricetta tornano a disporsi una sotto l'altra, */
+    .recipe-info .quick-notes ul{
+            display: block;
+        
+    }
+
+    /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro, */
+    .recipe .recipe-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .recipe-video{
+            flex-grow: 1;
+        }
+    }
+    .recipe-info .quick-notes ul li{
+        width: 100%;
+    }
+
+    
+}
